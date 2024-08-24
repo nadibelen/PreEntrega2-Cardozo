@@ -185,7 +185,7 @@ h3 {
 
 /*Estilos Index*/
 .encabezadoIndex {
-    background-image: url(/img/faroFinDelMundo.jpeg);
+    background-image: url(../img/faroFinDelMundo.jpeg);
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover; /*para que cubra todo el espacio disponible*/
