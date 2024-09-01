@@ -1,0 +1,69 @@
+@media only screen and (min-width: 800px) {
+    .contenedorSuperior {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    ul {
+        display: flex;
+    }
+
+    ul li {
+        margin: 0 1rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .img-card {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+   
+    .card .row {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+   
+    .img-card {
+      width: 25%; 
+    }
+  }
+
+  /*Media queries Page Nosotros*/
+@media (max-width: 768px) {
+    .emprendimiento {
+      flex-direction: column;
+      height: auto;
+      padding: 1rem;
+    }
+  
+    .historia, .seccionImagen{
+      flex: none;
+      padding: 0;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .historia{
+      margin-bottom: 2rem;
+    }   
+
+    .seccionImagen img {
+      max-width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .historia h1 {
+      font-size: 1.5rem;
+    }  
+  
+    .seccionImagen img {
+      max-width: 100%;
+    }
+  }
+
+

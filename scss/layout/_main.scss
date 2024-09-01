@@ -12,3 +12,59 @@ h3 {
     @extend %titulos;
     font-size: 1.3rem;
 }
+
+.emprendimiento, .infoGeneral {
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.historia, .queHacer {
+    flex: 1;
+    padding-right: 2rem;    
+}
+
+.seccionImagen, .seccionVideo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccionImagen{
+    img{
+        max-width: 80%;
+        height: auto;
+    } 
+}
+
+
+.card {    
+    background-color: #dcd4d4;
+    margin: 1.5rem 0;
+    
+}
+
+.card  {
+    p {
+        text-align: left;
+        font-size: 0.9rem;
+    }   
+}
+
+.card {
+    h3 {
+        font-size: 1.2rem;
+        text-align: center;
+    } 
+}
+
+.img-card {
+    width: 150px; 
+    height: auto;
+}
+
+.form-texto {
+    color: $colorSecundario;
+}

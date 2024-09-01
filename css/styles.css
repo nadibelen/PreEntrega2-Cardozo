@@ -87,6 +87,156 @@ h3 {
   font-size: 1.3rem;
 }
 
+.emprendimiento, .infoGeneral {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.historia, .queHacer {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.seccionImagen, .seccionVideo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seccionImagen img {
+  max-width: 80%;
+  height: auto;
+}
+
+.card {
+  background-color: #dcd4d4;
+  margin: 1.5rem 0;
+}
+
+.card p {
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.img-card {
+  width: 150px;
+  height: auto;
+}
+
+.form-texto {
+  color: #39332f;
+}
+
+.footer {
+  background-color: #39332f;
+  color: #efece8;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.contenedorFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.infoContacto, .redesSociales {
+  flex: 1;
+}
+
+.infoContacto h3, .redesSociales h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+}
+
+.social-media {
+  text-align: right;
+}
+
+.social-icon {
+  margin: 0 1rem;
+  display: inline-block;
+}
+
+.social-icon img {
+  width: 2rem;
+  height: 2rem;
+  transition: transform 0.3s;
+}
+
+.social-icon img:hover {
+  transform: scale(1.2);
+}
+
+@media only screen and (min-width: 800px) {
+  .contenedorSuperior {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  ul {
+    display: flex;
+  }
+  ul li {
+    margin: 0 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .img-card {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card .row {
+    flex-direction: column;
+    text-align: center;
+  }
+  .img-card {
+    width: 25%;
+  }
+}
+/*Media queries Page Nosotros*/
+@media (max-width: 768px) {
+  .emprendimiento {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+  .historia, .seccionImagen {
+    flex: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .historia {
+    margin-bottom: 2rem;
+  }
+  .seccionImagen img {
+    max-width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  .historia h1 {
+    font-size: 1.5rem;
+  }
+  .seccionImagen img {
+    max-width: 100%;
+  }
+}
 .encabezadoNos, .encabezadoTours, .encabezadoInfo, .encabezadoContacto, .encabezadoIndex {
   background-position: right;
   background-repeat: no-repeat;

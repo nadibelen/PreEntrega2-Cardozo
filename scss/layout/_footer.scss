@@ -1,0 +1,51 @@
+.footer {
+    background-color: $colorSecundario;
+    color: $colorPrincipal;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.contenedorFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.infoContacto, .redesSociales {
+    flex: 1;
+}
+
+.infoContacto h3, .redesSociales h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.contact-info  {
+    p {
+        margin: 0.5rem 0;
+    }
+}
+
+.social-media {
+    text-align: right;
+}
+
+.social-icon {
+    margin: 0 1rem;
+    display: inline-block;
+}
+
+.social-icon {
+    img {
+        width: 2rem;
+        height: 2rem;
+        transition: transform 0.3s;
+    }
+}
+
+.social-icon img:hover {
+    transform: scale(1.2);
+}
