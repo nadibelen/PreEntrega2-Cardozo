@@ -1,0 +1,328 @@
+/*Estilos generales*/
+* {
+    font-family: "Open Sans", sans-serif; 
+
+}
+
+.encabezadoNos, .encabezadoTours, .encabezadoInfo, .encabezadoContacto{
+        background-image: url(../img/encabezado2.jpeg);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        width: 100%;
+        height: 90vh;
+        position: relative
+    }
+
+.encabezadoTours {
+    background-image: url(../img/encabezado1.jpeg);
+}
+
+.encabezadoInfo {
+    background-image: url(../img/encabezado3.jpeg);
+}
+
+.encabezadoContacto {
+    background-image: url(../img/encabezado4.jpeg);
+}    
+
+.oscurecerFondo{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.692);
+    }
+    
+/*header gral hasta aca*/
+
+body {
+    background-color: #efece8;
+    color: #39332f;
+    font-size: 1rem;
+}
+
+/*esto es main*/
+main p {
+    text-align: center; 
+}
+
+/*esto lo puse en header*/
+ul {
+    list-style: none;  
+    padding: 0;  
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*esto es main*/
+h2,h3 {
+    text-align: center;
+    font-size: 1.8rem;   
+    font-family: "Raleway", sans-serif;
+    margin: 2rem 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+/*botones*/
+.boton {
+    border: none;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #F2BF5E;
+    color: #39332f;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.boton:hover{
+    background-color: #f0a926;
+    cursor: pointer;
+}
+
+/*especifico de las paginas*/
+
+.emprendimiento, .infoGeneral {
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.historia, .queHacer {
+    flex: 1;
+    padding-right: 2rem;    
+}
+
+.seccionImagen, .seccionVideo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccionImagen img {
+    max-width: 80%;
+    height: auto;
+}
+
+.card {    
+    background-color: #dcd4d4;
+    margin: 1.5rem 0;
+    
+}
+
+.card p {
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.img-card {
+    width: 150px; 
+    height: auto;
+}
+
+.form-texto {
+    color: #39332f;
+}
+
+/**footer**/
+
+.footer {
+    background-color: #39332f;
+    color: #dcd4d4;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.contenedorFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.infoContacto, .redesSociales {
+    flex: 1;
+}
+
+.infoContacto h3, .redesSociales h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+}
+
+.social-media {
+    text-align: right;
+}
+
+.social-icon {
+    margin: 0 1rem;
+    display: inline-block;
+}
+
+.social-icon img {
+    width: 2rem;
+    height: 2rem;
+    transition: transform 0.3s;
+}
+
+.social-icon img:hover {
+    transform: scale(1.2);
+}
+
+/*Estilos Index*/
+.encabezadoIndex {
+    background-image: url(../img/faroFinDelMundo.jpeg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover; /*para que cubra todo el espacio disponible*/
+    width: 100%;
+    height: 90vh;
+    position: relative
+}
+
+.oscurecerFondoIndex {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.521);
+}
+
+.amarillo {
+    color: #F2BF5E;
+}
+
+.tituloPrincipal {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #efece8;    
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    margin-top: 4rem;
+    }
+
+.enlacesHeader {
+    color: #efece8;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.enlacesHeader:hover {
+    color: #F2BF5E;
+}
+
+.logo {
+    width: 20%;    
+}
+
+.contenedorSuperior {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.parrafoHeader {
+    font-size: 1rem;
+    color: #efece8;
+}
+
+.contenedorInferior {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+/*Media Querys*/
+
+@media only screen and (min-width: 800px) {
+    .contenedorSuperior {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    ul {
+        display: flex;
+    }
+
+    ul li {
+        margin: 0 1rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .img-card {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+   
+    .card .row {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+   
+    .img-card {
+      width: 25%; 
+    }
+  }
+
+  
+
+/*Media querys Page Nosotros*/
+@media (max-width: 768px) {
+    .emprendimiento {
+      flex-direction: column;
+      height: auto;
+      padding: 1rem;
+    }
+  
+    .historia, .seccionImagen{
+      flex: none;
+      padding: 0;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .historia{
+      margin-bottom: 2rem;
+    }   
+
+    .seccionImagen img {
+      max-width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .historia h1 {
+      font-size: 1.5rem;
+    }  
+  
+    .seccionImagen img {
+      max-width: 100%;
+    }
+  }
+

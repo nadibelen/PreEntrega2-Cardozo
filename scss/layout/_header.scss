@@ -1,0 +1,86 @@
+.encabezadoNos {
+    background-image: url(../img/encabezado2.jpeg);
+    @extend %encabezadoGral;
+}
+
+.encabezadoTours {
+    background-image: url(../img/encabezado1.jpeg);
+    @extend %encabezadoGral;
+
+}
+
+.encabezadoInfo {
+    background-image: url(../img/encabezado3.jpeg);
+    @extend %encabezadoGral;
+}
+
+.encabezadoContacto {
+    background-image: url(../img/encabezado4.jpeg);
+    @extend %encabezadoGral;
+}   
+
+.encabezadoIndex {
+    background-image: url(../img/faroFinDelMundo.jpeg);
+    @extend %encabezadoGral;
+}
+
+.oscurecerFondo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.53);
+}
+
+.amarillo {
+    color: $colorAcento;
+}
+
+.tituloPrincipal {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: $colorPrincipal;    
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    margin-top: 4rem;
+}
+
+.enlacesHeader {
+    color: $colorPrincipal;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    &:hover {
+        color: $colorAcento;
+    }
+}
+
+.logo {
+    width: 20%;    
+}
+
+.contenedorSuperior {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.parrafoHeader {
+    font-size: 1rem;
+    color: $colorPrincipal;
+}
+
+.contenedorInferior {
+    width: 50%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;  
+    padding: 0;  
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
