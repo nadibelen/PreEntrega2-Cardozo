@@ -17,12 +17,12 @@ h3 {
     display: flex;    
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .historia, .queHacer {
     flex: 1;
-    padding-right: 2rem;    
+    padding: 2rem;    
 }
 
 .seccionImagen, .seccionVideo {
@@ -39,12 +39,18 @@ h3 {
     } 
 }
 
+/*cards*/
 
-.card {    
-    background-color: #dcd4d4;
-    margin: 1.5rem 0;
+.card {
+    @include card(#dcd4d4,2rem,underline);
+}
+
+.cardGuia {
+    @include card(#39332f52,2rem,underline);
+    margin-bottom: 2rem;
     
 }
+
 
 .card  {
     p {
@@ -53,9 +59,9 @@ h3 {
     }   
 }
 
-.card {
+.card, .cardGuia {
     h3 {
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-align: center;
     } 
 }
@@ -63,8 +69,4 @@ h3 {
 .img-card {
     width: 150px; 
     height: auto;
-}
-
-.form-texto {
-    color: $colorSecundario;
 }

@@ -91,12 +91,12 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .historia, .queHacer {
   flex: 1;
-  padding-right: 2rem;
+  padding: 2rem;
 }
 
 .seccionImagen, .seccionVideo {
@@ -111,9 +111,32 @@ h3 {
   height: auto;
 }
 
+/*cards*/
 .card {
   background-color: #dcd4d4;
-  margin: 1.5rem 0;
+  border: 1px solid 2rem;
+  border-radius: 8px;
+  box-shadow: underline;
+  padding: 1rem;
+  margin: 1rem 0;
+  transition: box-shadow 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cardGuia {
+  background-color: rgba(57, 51, 47, 0.3215686275);
+  border: 1px solid 2rem;
+  border-radius: 8px;
+  box-shadow: underline;
+  padding: 1rem;
+  margin: 1rem 0;
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+}
+.cardGuia:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .card p {
@@ -121,18 +144,14 @@ h3 {
   font-size: 0.9rem;
 }
 
-.card h3 {
-  font-size: 1.2rem;
+.card h3, .cardGuia h3 {
+  font-size: 1rem;
   text-align: center;
 }
 
 .img-card {
   width: 150px;
   height: auto;
-}
-
-.form-texto {
-  color: #39332f;
 }
 
 .footer {
@@ -201,7 +220,7 @@ h3 {
     margin-left: auto;
     margin-right: auto;
   }
-  .card .row {
+  .card .row .cardGuia {
     flex-direction: column;
     text-align: center;
   }
